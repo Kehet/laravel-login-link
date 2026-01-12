@@ -220,7 +220,11 @@ public function share(Request $request): array
 So, if you need to show the button only in your local environment, use the component like so for Vue :
 
 ```vue
+// For Ziggy
 import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/js/login-link.vue';
+
+// For Laravel Wayfinder
+//import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/js/login-link-wayfinder.vue';
 
 <LoginLink v-if="$page.props.environment === 'local'" />
 
@@ -232,9 +236,17 @@ import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/js/log
 For React, use the component like so:
 
 ```jsx
+// For Ziggy + plain JavaScript
 import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/js/LoginLink';
-// or for TypeScript, uncomment the following line
+
+// For Ziggy + TypeScript
 //import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/ts/LoginLink';
+
+// For Laravel Wayfinder + plain JavaScript
+//import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/js/LoginLinkWayfinder';
+
+// For Laravel Wayfinder + TypeScript
+//import LoginLink from '@/../../vendor/spatie/laravel-login-link/resources/ts/LoginLinkWayfinder';
 
 {page.props.environment === 'local' && (
     <LoginLink />
