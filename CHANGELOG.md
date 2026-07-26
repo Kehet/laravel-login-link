@@ -2,6 +2,26 @@
 
 All notable changes to `laravel-login-link` will be documented in this file.
 
+## 1.6.6 - 2026-02-27
+
+- Use Pest 4
+- Require PHP 8.3+
+- Drop Laravel 10 support
+
+## 2.0.0 - 2026-02-27
+
+- Use Pest 4
+- Require PHP 8.3+
+- Drop Laravel 10 support
+
+## 1.6.5 - 2026-02-27
+
+Drop PHP 8.0/8.1 support and fix CI matrix for PHP 8.4/8.5 with Laravel 10
+
+## 1.6.4 - 2026-02-27
+
+Add Laravel 13.x compatibility
+
 ## 1.6.3 - 2025-04-16
 
 ### What's Changed
